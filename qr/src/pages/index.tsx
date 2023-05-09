@@ -25,7 +25,7 @@ export default function Home() {
         <div className="w-full flex justify-center items-center">
           <input type="text" value={qrValue} onChange={handleInputChange} className="w-full bg-green-500 text-black py-2 px-4 rounded-md placeholder-black m-5" placeholder="Introduce tu texto aquí" />
         </div>
-        <div className="w-11/12 flex justify-center items-center">
+        <div className="w-screen flex justify-center items-center">
           <QrScanner
             onDecode={handleScanResult}
             onError={(error) => console.log(error?.message)}
